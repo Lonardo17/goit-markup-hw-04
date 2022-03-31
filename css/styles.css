@@ -71,6 +71,10 @@ nav {
 .studio2 {
   color: var(--second-text-color);
 }
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
 /* head */
 header {
   border-bottom: 1px solid #ececec;
@@ -81,8 +85,11 @@ header {
 .header {
   display: flex;
 }
-.header li:not(:last-child) {
+.header .link:not(:last-child) {
   margin-right: 50px;
+}
+.header-contacts:not(:last-child) {
+  margin-right: 30px;
 }
 .choise,
 .active {
@@ -110,9 +117,18 @@ header {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+.icon-mail {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  /* height: 16px; */
+}
 .contacts:hover,
 .contacts:focus {
   color: var(--blue-color);
+}
+.contacts:hover .icon-mail,
+.contacts:focus .icon-mail {
+  fill: var(--blue-color);
 }
 /* hero */
 .hero {
@@ -120,8 +136,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--background-hero);
   text-align: center;
+  /* background: rgba(47, 48, 58, 0.4); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 600px;
 }
 
@@ -180,6 +201,19 @@ header {
   font-size: 14px;
   line-height: 1.71;
 }
+.advantage-img{
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+.advantage-icon{
+  width: 70px;
+  height: 70px;
+}
 
 /* third section & forth section */
 .working {
@@ -208,15 +242,17 @@ header {
 .team {
   padding-bottom: 94px;
   padding-top: 94px;
+  background: #f5f4fa;
 }
 .padding {
-  padding: 30px 0;
+  background: #ffffff;
+  padding: 30px 32px;
 }
 .team-list {
   display: flex;
   margin: 0;
 }
-.team-list li {
+.team-shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -224,6 +260,9 @@ header {
 
 .team-list li:not(:last-child) {
   margin-right: 30px;
+}
+.peculiarity {
+  display: block;
 }
 .team h3 {
   font-weight: 500;
@@ -236,6 +275,73 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  padding: auto;
+}
+.team-link:hover .team-icon,
+.team-linnk:focus .team-icon {
+  fill: #ffffff;
+}
+.team-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-link:hover,
+.team-linnk:focus {
+  background: #2196f3;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+/* ---------------fifth section--------------------- */
+.customers {
+  padding: 94px 0;
+}
+.customers h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: #2196f3;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #2196f3;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+.customers-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* footer */
 footer {
@@ -245,16 +351,50 @@ footer {
 footer address {
   margin-top: 20px;
 }
+footer .container {
+  display: flex;
+}
+.invite {
+  margin-left: 70px;
+  width: 206px;
+}
+.invite-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.invite-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.invite-link:hover,
+.invite-link:focus {
+  background-color: #2196f3;
+}
+.invite-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.invite-list {
+  display: flex;
+  justify-content: space-between;
+}
 .indent:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .address-list {
   margin: 0;
 }
-/* .address-list li {
-  margin-bottom: 9px;
-} */
 .address {
   text-decoration: none;
   font-style: normal;
