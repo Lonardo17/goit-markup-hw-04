@@ -202,11 +202,12 @@ header {
   line-height: 1.71;
 }
 .advantage-img{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background: #F5F4FA;
   border-radius: 4px;
 }
@@ -258,7 +259,7 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list li:not(:last-child) {
+.team-shadow:not(:last-child) {
   margin-right: 30px;
 }
 .peculiarity {
@@ -296,7 +297,7 @@ header {
   align-items: center;
 }
 .team-link:hover,
-.team-linnk:focus {
+.team-link:focus {
   background: #2196f3;
 }
 .team-list {
