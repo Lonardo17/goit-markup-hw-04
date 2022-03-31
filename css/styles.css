@@ -287,7 +287,7 @@ header {
   padding: auto;
 }
 .team-link:hover .team-icon,
-.team-linnk:focus .team-icon {
+.team-link:focus .team-icon {
   fill: #ffffff;
 }
 .team-link {
@@ -305,6 +305,11 @@ header {
 .team-list {
   display: flex;
   justify-content: center;
+}
+.team-list-item{
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 /* ---------------fifth section--------------------- */
 .customers {
