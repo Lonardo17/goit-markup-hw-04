@@ -110,6 +110,7 @@ header {
 
 /* contacts */
 .contacts {
+  display: flex;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -120,8 +121,9 @@ header {
 .icon-mail {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  /* height: 16px; */
-}
+  height: 16px;
+  }
+  
 .contacts:hover,
 .contacts:focus {
   color: var(--blue-color);
